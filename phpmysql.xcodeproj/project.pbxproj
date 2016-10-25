@@ -12,6 +12,7 @@
 		980EE2731DB8FF950005D618 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980EE2711DB8FF950005D618 /* Main.storyboard */; };
 		980EE2751DB8FF960005D618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 980EE2741DB8FF960005D618 /* Assets.xcassets */; };
 		980EE2781DB8FF960005D618 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980EE2761DB8FF960005D618 /* LaunchScreen.storyboard */; };
+		980EE29E1DB913E10005D618 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = 980EE29D1DB913E00005D618 /* Notes */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		980EE2741DB8FF960005D618 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		980EE2771DB8FF960005D618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		980EE2791DB8FF960005D618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		980EE29D1DB913E00005D618 /* Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		980EE2611DB8FF930005D618 = {
 			isa = PBXGroup;
 			children = (
+				980EE29D1DB913E00005D618 /* Notes */,
 				980EE26C1DB8FF950005D618 /* phpmysql */,
 				980EE26B1DB8FF940005D618 /* Products */,
 			);
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					980EE2691DB8FF940005D618 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5YFV6RLNP6;
 					};
 				};
 			};
@@ -124,6 +128,7 @@
 			files = (
 				980EE2781DB8FF960005D618 /* LaunchScreen.storyboard in Resources */,
 				980EE2751DB8FF960005D618 /* Assets.xcassets in Resources */,
+				980EE29E1DB913E10005D618 /* Notes in Resources */,
 				980EE2731DB8FF950005D618 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,10 +256,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = phpmysql/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elsevier.phpmysql;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -262,10 +272,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = phpmysql/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elsevier.phpmysql;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -288,6 +303,7 @@
 				980EE27E1DB8FF960005D618 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

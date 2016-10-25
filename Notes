@@ -1,0 +1,27 @@
+
+https://www.simplifiedios.net/swift-php-mysql-tutorial/
+
+
+Works from simulator but tutorial says insecure compared to restful or firebase
+
+Fails from phone with db error. Tried various syntax in info.plist
+
+error is Optional(Error Domain=NSURLErrorDomain Code=-1005 "The network connection was lost." UserInfo={NSErrorFailingURLStringKey=http://145.36.81.35/MyWebServices/includes/createteam.php, _kCFStreamErrorCodeKey=-4, NSErrorFailingURLKey=http://145.36.81.35/MyWebServices/includes/createteam.php, NSLocalizedDescription=The network connection was lost., _kCFStreamErrorDomainKey=4, NSUnderlyingError=0x14db6bc0 {Error Domain=kCFErrorDomainCFNetwork Code=-1005 "(null)" UserInfo={_kCFStreamErrorDomainKey=4, _kCFStreamErrorCodeKey=-4}}})
+
+could be from els firewall, try at home
+
+url works in postman, so problem is ios or network "http://145.36.81.35/MyWebServices/includes/createteam.php"
+
+
+Could try at home or try using 000webhost db
+
+https://members.000webhost.com/panel/mysql
+a5553290_teams	a5553290_admin	mysql6.000webhost.com fall02
+
+worked with postman
+http://backto2billion.com/MyWebServices/api/createteam.php
+had to use domain name, not 000webhost server or ip address. I seem to recall 000webhost doesn't let anything work except by one's own domain name
+'
+WOrks from phone to 000webhost!!!
+but one bug
+Error Domain=NSCocoaErrorDomain Code=3840 "Garbage at end." UserInfo={NSDebugDescription=Garbage at end.}
